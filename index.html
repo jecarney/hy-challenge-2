@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Beau's Seasonal</title>
+	<!-- IMPORT FONTS -->
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans">
+	<!-- CUSTOM CSS -->
+	<link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<div>
+				<h1>Beau's Seasonal</h1>
+			</div>
+		</header>
+		<div id="panel_wrapper" class="clearfloat">
+
+			<nav id="left_panel" class="side_panel beer_list match_height">
+				<a href="javascript:void(0)" id="left_close" class="close_btn">&times;</a>
+				<h2>Please select a beer: </h2>
+				<div class="wait"><img src='images/ajax-loader.gif' width="20" height="20"/></div>
+			</nav>
+			<div id="centre_column" class="match_height">
+				<span id="left_open">Select Beer</span>
+				<nav id="first_select" class="beer_list">
+					<h2>Please select a beer: </h2>
+				</nav>
+				<main>
+					<!-- <div class="wait"><img src='images/ajax-loader.gif' width="20" height="20"/></div> -->
+					<!-- <figure id="beer_pic">
+
+					</figure> -->
+					<section id="desc">
+						<h2 id="title">Product Details</h2>
+					</section>
+					<section id="stores">
+						<h3>Available at the following stores: </h3>
+						<div class="wait"><img src='images/ajax-loader.gif' width="20" height="20"/></div>
+						<div id="store_list"></div>
+					</section>
+				</main>
+				<footer>
+
+				</footer>
+			</div>
+			<nav id="right_panel" class="side_panel match_height">
+				<a href="javascript:void(0)" id="right_close" class="close_btn">&times;</a>
+				<h2>Store Details</h2>
+				<div class="wait"><img src='images/ajax-loader.gif' width="20" height="20"/></div>
+				<aside></aside>
+			</nav>
+		</div>
+	</div>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArQZm3j9XWYWJYpvipACRgvz1w52ZfB9U"
+	async defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.matchHeight.js"></script>
+	<script type="text/javascript" src="js/script.js" ></script>
+</body>
+</html>
