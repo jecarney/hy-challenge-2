@@ -60,7 +60,8 @@ $(function() {
         fetchCtr += 1;
 
         jQuery.ajax({
-            url: 'https://lcboapi.com/stores?product_id=' + id,
+            url: 'http://lcboapi.com/stores?product_id=' + id,
+            dataType: 'jsonp',
             headers: {
                 'Authorization': 'Token MDo3NTU4MDQ0NC01ZGRiLTExZTYtYjliZC1mNzA2N2UyOWYwYTE6dGRXNDJOUms4MjZCRlg3b0N2OWx3bkZtYmhiZkVZeWJEYTdk'
             }
@@ -141,7 +142,8 @@ $(function() {
 
     // AJAX CALL INITIATES APP
     jQuery.ajax({
-        url: 'https://lcboapi.com/products?where=is_seasonal',
+        url: 'http://lcboapi.com/products?where=is_seasonal',
+        dataType: 'jsonp',
         headers: {
             'Authorization': 'Token MDo3NTU4MDQ0NC01ZGRiLTExZTYtYjliZC1mNzA2N2UyOWYwYTE6dGRXNDJOUms4MjZCRlg3b0N2OWx3bkZtYmhiZkVZeWJEYTdk'
         }
